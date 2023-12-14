@@ -2,7 +2,8 @@
 
     zn "%SYS"
     Do ##class(Security.Users).UnExpireUserPasswords("*")
-    zpm "install passwordless"
+    Do ##class(Security.Users).AddRoles("CSPSystem", "%DB_IRISSYS")   
+    ;zpm "install passwordless"
 
     zn "USER"
     zpm "load /home/irisowner/dev/ -v":1

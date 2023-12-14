@@ -13,6 +13,14 @@
           <Version>1.*.*</Version>
         </ModuleReference>
       </Dependencies>
+      <Invokes>
+        <Invoke Class="dc.Sample.SetupUtil" Method="Apply">
+          <Arg>/csp/sys</Arg>
+          <Arg>SuperUser</Arg>
+          <Arg>SYS</Arg>
+        </Invoke>
+      </Invokes>
+      <FileCopy Name="superusers.csv" Target="${libdir}csv"/>
        <CSPApplication 
         Url="/crud"
         DispatchClass="dc.Sample.PersonREST"
