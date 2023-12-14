@@ -11,11 +11,11 @@ This is an application sample to show how to develop custom login pages and cust
 
 zpm:USER>install custom-login
 
-## Installation for development
+## Installation using Docker
 
 Create your repository from template.
 
-Clone/git pull the repo into any local directory e.g. like it is shown below (here I show all the examples related to this repository, but I assume you have your own derived from the template):
+Clone/git pull the repo into any local directory:
 
 ```
 $ git clone https://github.com/yurimarx/custom-login.git
