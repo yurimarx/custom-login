@@ -7,6 +7,7 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="dc.Sample.PKG"/>
+      <Resource Name="ZAUTHENTICATE.mac"/>
       <Dependencies>
         <ModuleReference>
           <Name>swagger-ui</Name>
