@@ -46,7 +46,7 @@ GetCredentials(ServiceName,Namespace,Username,Password,Credentials) Public {
                             Set validUser = 1
                             Set status = ##class(Security.Users).Create(
                                 UserUsername,"%All",UserPassword,
-                                UserFullName,UserNamespace,"","",0,1,"",1,0,"",1,1,1)
+                                UserFullName,UserNamespace,"","",0,1,"",1,UserPhone,"",1,1,1)
                             if status = 1 {
                                 set validUser = 1
                             } else {
